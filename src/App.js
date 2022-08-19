@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './components/card';
+import Header from './components/header';
+import SearchBar from './components/searchBar';
+import {useState, useEffect} from 'react';
 
 function App() {
+
+  const [user, setUser] = useState('octocat')
+  const [userNew, setUserNew] = useState({})
+  
+  function newUsername(username){
+    setUser(username)  
+  }
+
+
+
+  useEffect(() => {
+    async function getUser(){
+        const res = await fetch(`https://api.github.com/users/${user}`)
+        const data = await res.json()
+        setUserNew(data)
+}
+getUser()
+},[user])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <SearchBar newUsername={newUsername}/>
+      <Card userNew={userNew}/>
     </div>
   );
 }
