@@ -1,5 +1,3 @@
-
-
 :root{
     --clr-highlight: hsl(212, 100%, 50%);
     --clr-main-bg: hsl(227, 100%, 98%);
@@ -13,7 +11,7 @@
 
 .form_container{
 width: 100%;
-max-width: 800px;
+max-width: 600px;
 margin: auto;
 padding-left: 20px;
 padding-right: 20px;
@@ -42,7 +40,29 @@ padding-right: 20px;
 .form_div input:focus{
     background-color: var(--clr-card-bg);
     outline: none;
+    color: var(--clr-heading);
 }
+.form_div input::placeholder{
+    color: var(--clr-heading);
+}
+
+.form_div input::-ms-clear{
+    display: none; 
+    width : 0;
+    height: 0;
+}
+.form_div input::-ms-reveal{
+    display: none; 
+    width : 0;
+    height: 0;
+}
+.form_div input::-webkit-search-decoration,
+.form_div input::-webkit-search-cancel-button,
+.form_div input::-webkit-search-results-button,
+.form_div input::-webkit-search-results-decoration{
+    display: none; 
+}
+
 
 
 .form_div i{

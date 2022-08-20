@@ -16,6 +16,7 @@ export default function SearchBar({ newUsername }) {
           type="search"
           placeholder="Search GitHub username..."
           name="user"
+          autoComplete="off"
           onChange={(e) =>{setUsername(e.target.value)}}
           ></input>
         <button type="submit">Search</button>

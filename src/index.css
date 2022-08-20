@@ -4,9 +4,20 @@
 body {
   margin: 0;
   font-family: 'Space Mono', monospace;
-  background-color: var(--clr-main-bg);
-
 }
+.App{
+  background-color: var(--clr-main-bg);
+  transition: background-color .4s;
+}
+
+#light {
+  --clr-main-bg: hsl(221, 42%, 13%);
+  --clr-text: hsl(221, 14%, 60%);
+  --clr-heading: hsl(225, 59%, 93%);
+  --clr-card-bg: hsl(224, 40%, 20%);
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

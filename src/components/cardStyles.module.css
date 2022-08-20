@@ -1,5 +1,5 @@
 .card_container{
-    max-width: 800px;
+    max-width: 600px;
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -21,13 +21,22 @@
     margin-bottom: 20px;
 }
 
+.card_user_name{
+    color: var(--clr-heading);
+    font-size: 20px;
+}
+
+.card_date{
+    color: var(--clr-text);
+}
+  
 .card_header_img_container {
     width: 40%;
     
 }
 .card_header_img_container img{
-    width: 40%;
-    
+    width: 120px;
+    margin-left: 20px;
     border-radius: 50%;
 }
 
@@ -44,6 +53,15 @@
     color: var(--clr-highlight);
 }
 
+
+.card_bio{
+    display: flex;
+    margin: 20px;
+    font-size: 14px;
+    color: var(--clr-text-secondary);
+}
+
+
 /* Card Stats */
 .card_stats_container{
     display: flex;
@@ -51,18 +69,23 @@
     justify-content: space-between;
     
     margin: 20px;
-    padding: 30px;
+    padding: 20px;
     border-radius: 12px;
     background-color: var(--clr-main-bg);
 }
 .card_stats_container div{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:flex-start;
     justify-content: center;
 }
 .card_stats_container div p{
     font-size: 14px;
+    color: var(--clr-text);
+}
+
+.card_stats_number{
+    font-size: 20px;
     color: var(--clr-heading);
 }
 
@@ -79,4 +102,15 @@
     overflow:auto;
     padding-bottom: 40px;
     
+}
+.info_container div div svg{
+    fill:var(--clr-text);   
+}
+.info_container div div h4{
+    color:var(--clr-text);   
+}
+.info_container div div a{
+    color:var(--clr-text);
+    text-decoration: none; 
+    cursor: pointer;  
 }
