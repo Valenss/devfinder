@@ -132,6 +132,7 @@
     flex-direction: row;
     width: 200px;
     overflow: hidden;
+    height: 80px;
   }
 }
 
@@ -146,6 +147,7 @@
     justify-content: center;
     padding-top: 40px;
     width: 30%;
+    
   }
 
   .card_header_info_container{
