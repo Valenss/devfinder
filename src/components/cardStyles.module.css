@@ -133,6 +133,7 @@
     width: 200px;
     overflow: hidden;
     height: 80px;
+    align-items:initial;
   }
 }
 
