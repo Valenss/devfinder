@@ -11,7 +11,7 @@
 
 .form_container{
 width: 100%;
-max-width: 600px;
+max-width: 1000px;
 margin: auto;
 padding-left: 20px;
 padding-right: 20px;
@@ -31,11 +31,10 @@ padding-right: 20px;
     background-color: var(--clr-card-bg);
     border: none;
     padding-left: 50px;
-    color: var(--clr-main-bg);
+    color: var(--clr-text);
     border-radius: 12px;
     font-family: 'Space Mono', monospace;
     font-size: 16px;
-
 }
 .form_div input:focus{
     background-color: var(--clr-card-bg);

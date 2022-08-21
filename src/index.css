@@ -4,17 +4,19 @@
 body {
   margin: 0;
   font-family: 'Space Mono', monospace;
+  
 }
 .App{
   background-color: var(--clr-main-bg);
   transition: background-color .4s;
+  height: 100vh;
 }
 
 #light {
-  --clr-main-bg: hsl(221, 42%, 13%);
-  --clr-text: hsl(221, 14%, 60%);
+  --clr-main-bg: hsl(220, 40%, 13%);
+  --clr-text: hsl(0, 0%, 100%);
   --clr-heading: hsl(225, 59%, 93%);
-  --clr-card-bg: hsl(224, 40%, 20%);
+  --clr-card-bg: hsl(222, 41%, 20%);
 }
 
 
